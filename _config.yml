@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Ali Alsaqqa"
   avatar           : "profile.png"
-  bio              : key: |
-                     "Experimental Physicis t
-                      Data Science"
+  bio              : |
+                       "Experimental Physicis t
+                        Data Science"
   location         : "Greater New York"
   employer         :
   pubmed           : 
