@@ -8,21 +8,9 @@ tags:
   - Python
 ---
   
-  this is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
-
-```js
-function myFunction () {
-   return 42;
-}
-```
+  this is a sample blog post.
 
 ```python
 if (isAwesome):
   return true
 ```
-
-
-dd
---
-
-
