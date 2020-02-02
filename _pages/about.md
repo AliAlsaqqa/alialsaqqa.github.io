@@ -14,9 +14,8 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* aa
+* cc
 
 Work experience
 ======
