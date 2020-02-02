@@ -1,7 +1,7 @@
 ---
 title: 'Quick Removal of Low-Correlating Features'
 date: 2020-02-02
-permalink: /posts/2020/02/blog-post-1/
+permalink: /posts/2020/02/quick-removal-1/
 tags:
   - Machine Learning
   - Feature Engineering
@@ -10,6 +10,11 @@ tags:
   
   this is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
 
+```js
+function myFunction () {
+   return 42;
+}
+```
 
 ```python
 if (isAwesome):
