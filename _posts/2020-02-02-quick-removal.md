@@ -1,5 +1,5 @@
 ---
-title: 'Quick Removal of Low-Correlation Features'
+title: 'Quick Removal of Low-Correlating Features'
 date: 2020-02-02
 permalink: /posts/2020/02/blog-post-1/
 tags:
