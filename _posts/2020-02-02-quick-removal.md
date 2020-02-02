@@ -11,15 +11,6 @@ tags:
   this is a sample blog post.
 
 ```python
-if (isAwesome):
-  return true
+s = "Python syntax highlighting"
+print s
 ```
-
-jjj
-
-`config.yml`
-
-`import numpy as np`
-`import pandas as pd`
-`import matplotlib.pyplot as plt`
-`import seaborn as sns`
