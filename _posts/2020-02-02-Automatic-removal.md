@@ -33,22 +33,23 @@ import seaborn as sns
 train = pd.read_csv("../input/house-prices-advanced-regression-techniques/train.csv")
 
 c = train.corr() # Get correlation matrix
-cv = c.values; length = cv.shape[0]-1; # convert correlation matrix to numeric array
+cv = c.values; length = cv.shape[0]-1; # convert  to numeric array
 cv_last = cv[length,:] # Assume predictor is the last column
-low_corr = np.argwhere(cv_last < 0.5) # Identify columns that have correlation less than 0.5
+low_corr = np.argwhere(cv_last < 0.5) # Identify columns that have corr < 0.5
 train2 = train
 low_corr=np.transpose(low_corr)
 
 n_cols = len(train.columns)
 num_cols = np.zeros((1, n_cols))
 k = 0
-for i in range(0,n_cols):
+for i in range(0,n_cols): # Purpose of this loop is to get an index of the numeric columns within the original mixed dataframe
     if type(train.iloc[0][train.columns[i]])!=str:
         num_cols[0,k]=i; k = k + 1;
-np.delete(num_cols,range(k,n_cols))
-to_delete=num_cols[0,low_corr]
+np.delete(num_cols,range(k,n_cols)) # Remove extra columns
+to_delete=num_cols[0,low_corr] # index of columns to be deleted
 
-train2 = train.drop(train.columns[to_delete.astype(int)],  axis='columns')
+train2 = train.drop(train.columns[to_delete.astype(int)],  axis='columns') # Drop the low correlating columns
+
 plt.figure(figsize=[30,15])
 sns.heatmap(train2.corr(), square=True, annot=True, annot_kws={"fontsize":18}, fmt=".2f");
 
