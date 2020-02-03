@@ -9,7 +9,10 @@ tags:
 ---
   
   this is a sample blog post.
-kk
+
+Heatmap with all features included:
+
+![Heatmap with all features included](/images/heat1.png)
 
 {% highlight python %}
 import numpy as np
@@ -41,3 +44,8 @@ plt.figure(figsize=[30,15])
 sns.heatmap(train2.corr(), square=True, annot=True, annot_kws={"fontsize":18}, fmt=".2f");
 
 {% endhighlight %}
+
+
+Heatmap with low-correlating features removed:
+
+![Heatmap with some features included](/images/heat2.png)
