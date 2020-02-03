@@ -14,3 +14,11 @@ tags:
 s = "Python syntax highlighting"
 print s
 ```
+kk
+
+{% highlight python %}
+import matplotlib as plt
+import pandas as pd
+import seaborn as sns
+sns.set() # set styling to seaborn
+{% endhighlight %}
