@@ -20,7 +20,7 @@ We start by showing a typical heatmap that illustrate the concept. The dataset i
 
 ![Heatmap with all features included](/images/heat1.png)
 
-The usual course of action is to look at the figure, identify features wich correlate to the predictor by less than a threshold, and then manually drop them. Instead the following code does the job automatically. We assume the dataframe is called 'train', the output dataframe is then called 'train2':
+The usual course of action is to look at the figure, identify features which correlate to the predictor by less than a threshold, and then manually drop them. Instead the following code does the job automatically. We assume the dataframe is called 'train', the output dataframe is then called 'train2':
 
 {% highlight python %}
 import numpy as np
