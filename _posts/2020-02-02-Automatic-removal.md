@@ -9,11 +9,6 @@ tags:
 ---
   
   this is a sample blog post.
-
-```python
-s = "Python syntax highlighting"
-print s
-```
 kk
 
 {% highlight python %}
