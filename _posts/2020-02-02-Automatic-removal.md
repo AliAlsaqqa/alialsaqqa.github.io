@@ -29,13 +29,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Input data
 train = pd.read_csv("../input/house-prices-advanced-regression-techniques/train.csv")
-test = pd.read_csv("../input/house-prices-advanced-regression-techniques/test.csv")
 
-c = train.corr()
-cv = c.values; length = cv.shape[0]-1;
-cv_last = cv[length,:]
-low_corr = np.argwhere(cv_last < 0.5)
+c = train.corr() # Get correlation matrix
+cv = c.values; length = cv.shape[0]-1; # convert correlation matrix to numeric array
+cv_last = cv[length,:] # Assume predictor is the last column
+low_corr = np.argwhere(cv_last < 0.5) # Identify columns that have correlation less than 0.5
 train2 = train
 low_corr=np.transpose(low_corr)
 
