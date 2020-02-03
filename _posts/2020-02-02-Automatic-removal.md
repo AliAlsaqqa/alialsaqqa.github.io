@@ -12,7 +12,7 @@ If you have been doing any Machine Learning recently, you have probably spent so
 
 Consider, for example, a typical regression problem where we want to predict the price of a house given (labeled) house data. This dataset will include many features, for instance the area of the house, number of rooms, location, etc, in addition to the predictor: sale price. It is usally a good practice to keep our models as simple as possible (but not any simpler). For that we have to identify which of the features given are important and which are not.
 
-But how do we do that? One method is to look at the (Pearson) correlation coefficient between a given feature and the predictor (sale price). Those features that have low correlation (E.g. less than 0.5) are then dropped.
+But how do we do that? One method is to look at the (Pearson) correlation coefficient between a given feature and the predictor (sale price). Those features that have low correlation (e.g. less than 0.5) are then dropped.
 
 This task is usually done manually. **The goal of this post is to provide a simple Python script that automatically remove features with low correlation to the predictor.** We assume we are given a Pandas dataframe which have a mix of numeric and categorical columns. If the dataframe was purely numerical then one line can do the job (as in `df.select_dtypes(exclude=['int'])`). But when there are categorical, as well as numerical, columns then that command will not work; it will still choose the numeric columns but there is no way to map these back (after dropping some of them that are deeped less important) to the originial dataframe.
 
