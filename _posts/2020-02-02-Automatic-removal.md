@@ -7,7 +7,9 @@ tags:
   - Feature Engineering
   - Python
 ---
-  
+
+Introduction
+------
 If you have been doing any Machine Learning recently, you have probably spent some time doing feature engineering. One important aspect of this task is to identify features that do not correlate well with the target.
 
 Consider, for example, a typical regression problem where we want to predict the price of a house given (labeled) house data. This dataset will include many features, for instance the area of the house, number of rooms, location, etc, in addition to the predictor: sale price. It is usually a good practice to keep our models as simple as possible (but not any simpler). For that we have to identify which of the features given are important and which are not.
@@ -16,7 +18,9 @@ But how do we do that? One method is to look at the (Pearson) correlation coeffi
 
 This task is usually done manually. **The goal of this post is to provide a simple Python script that automatically remove features with low correlation to the predictor.** We assume we are given a Pandas dataframe which have a mix of numeric and categorical columns, and that the predictor column is the last one among the numeric columns. Had the dataframe been purely numerical then few lines of code would have been enough to do the job (using `df.select_dtypes(include=['int'])`). But when there are categorical, as well as numerical, columns then that command will not work; it will still choose the numeric columns but there is no way to map these back (after dropping some of them that are deeped less important) to the originial dataframe.
 
-We start by showing a typical heatmap that illustrate the concept. The dataset is from a Kaggle competition (https://www.kaggle.com/c/house-prices-advanced-regression-techniques). The dataframe contains a mix of columns. The following command generate the typical heatmap: `sns.heatmap(train.corr(), annot=True, fmt=".1f");`:
+Implementation
+------
+We start by showing a typical heatmap that illustrate the concept. The dataset is from a [Kaggle competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques). The dataframe contains a mix of columns. The following command generate the typical heatmap: `sns.heatmap(train.corr(), annot=True, fmt=".1f");`:
 
 ![Heatmap with all features included](/images/heat1.png)
 
@@ -59,4 +63,6 @@ Here is the heatmap with low-correlating features removed:
 
 ![Heatmap with some features included](/images/heat2.png)
 
-I hope you find the code usefull. IF you have any comment please leave it below!
+Conclusion
+==========
+In this post we provided a short script to automate part of your feature engineering work. I hope you find the code usefull. IF you have any comment please leave it below!
