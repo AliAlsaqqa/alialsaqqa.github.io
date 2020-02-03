@@ -8,11 +8,19 @@ tags:
   - Python
 ---
   
-  this is a sample blog post.
+If you have been doing any Machine Learning recently, you have probably spent some time doing feature engineering. One important aspect of this task is to identify features that do not correlate well with the target.
 
-Heatmap with all features included:
+Consider, for example, a typical regression problem where we want to predict the price of a house given (labeled) house data. This dataset will include many features, for isntance are of the house, number of rooms, location, etc, in addition to the predictor: sale price. It is usally a good practice to keep our models as simple as possible (but not any simpler). For that we have to identify which of the features given are important and which are not.
+
+But how do we do that? One method is to look at the (Pearson) correlation coefficient between a given feature and the predictor (sale price). Those features that have low correlation (E.g. less than 0.5) are then dropped.
+
+This task is usually done manually. *The goal of this post is to provide a simple Python script that automatically remove features with low correlation to the predictor.* We assume we are given a Pandas dataframe which have a mix of numeric and categorical columns. If the dataframe was purely numerical then one line can do the job (as in `df.select_dtypes(exclude=['int'])`). But when there are categorical, as well as numerical, columns then that command will not work; it will still choose the numeric columns but there is no way to map these back (after dropping some of them that are deeped less important) to the originial dataframe.
+
+We start by showing a typical heatmap that illustrate the concept. The dataset is from a Kaggle competition (https://www.kaggle.com/c/house-prices-advanced-regression-techniques). The dataframe contains a mix of columns. The following command generate the typical heatmap: `sns.heatmap(train.corr(), annot=True, fmt=".1f");`:
 
 ![Heatmap with all features included](/images/heat1.png)
+
+The usual course of action is to look at the figure, identify features wich correlate to the predictor by less than a threshold, and then manually drop them. Instead the following code does the job automatically. We assume the dataframe is called 'train', the output dataframe is then called 'train2':
 
 {% highlight python %}
 import numpy as np
@@ -45,7 +53,8 @@ sns.heatmap(train2.corr(), square=True, annot=True, annot_kws={"fontsize":18}, f
 
 {% endhighlight %}
 
-
-Heatmap with low-correlating features removed:
+Here is the heatmap with low-correlating features removed:
 
 ![Heatmap with some features included](/images/heat2.png)
+
+I hope you find the code usefull. IF you have any comment please leave it below!
