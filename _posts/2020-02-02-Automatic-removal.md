@@ -10,7 +10,7 @@ tags:
   
 If you have been doing any Machine Learning recently, you have probably spent some time doing feature engineering. One important aspect of this task is to identify features that do not correlate well with the target.
 
-Consider, for example, a typical regression problem where we want to predict the price of a house given (labeled) house data. This dataset will include many features, for isntance are of the house, number of rooms, location, etc, in addition to the predictor: sale price. It is usally a good practice to keep our models as simple as possible (but not any simpler). For that we have to identify which of the features given are important and which are not.
+Consider, for example, a typical regression problem where we want to predict the price of a house given (labeled) house data. This dataset will include many features, for instance the area of the house, number of rooms, location, etc, in addition to the predictor: sale price. It is usally a good practice to keep our models as simple as possible (but not any simpler). For that we have to identify which of the features given are important and which are not.
 
 But how do we do that? One method is to look at the (Pearson) correlation coefficient between a given feature and the predictor (sale price). Those features that have low correlation (E.g. less than 0.5) are then dropped.
 
