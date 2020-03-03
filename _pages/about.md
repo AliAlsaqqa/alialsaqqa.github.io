@@ -59,25 +59,23 @@ Skills
 * Electrical characterization using spectrum analyzers, oscilloscopes and lock-in amplifiers.
 * Low temperature measurements using cryostats, along with associated vacuum systems.
 
+Patents
+======
+* Ali Alsaqqa, Josh Adams and Bin Li. “Alignment system with modulated light source”. Patent pending. Application number: 62/908,101.
+* Ali Alsaqqa, et. al., “Variable Diffraction Grating”. Patent pending. Application number: 62/927,206.
+
+Awards
+======
+* Outstanding Teacher Assistant Award, University at Buffalo, 2016.
+* Fulbright Fellowship, U. S. Department of State, 2012.
+
 Publications (Select)
 ======
 * Ali Alsaqqa, et al. "Phase coexistence and dynamical behavior in NdNiO3 ultrathin films", Phys. Rev. B 95, 125132 (2017).
 * Colin Kilcoyne, Ahmed Ali, Ali Alsaqqa, et. al., "Gate-tunable transport characteristics of Bi2S3 nanowire transistors". Solid State Communications 270, p. 135-139 (2017).
 
-  
-Talks
+Conference Presentations (Select)
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
-
+* Correlation-driven metal-insulator transition in CuxV2O5 nanobeams probed by resistance noise spectroscopy. American Physical Society, New Orleans, LA (2017).
+* Resistance noise spectroscopy across the thermally and electrically driven metal-insulator transitions in VO2 nanobeams. American Physical Society, Baltimore, MD (2016).
+* Finite size effects in electrical transport and noise measurements in mesoscopic NbSe3 nanobeams. American Physical Society, Denver, CO (2014).
