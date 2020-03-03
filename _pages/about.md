@@ -60,18 +60,19 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Statistical analysis using probability, Kalman Filter and time series analysis.
+* Signal processing using digital filter design and signal analysis in time and frequency domains.
+* Fluent in MATLAB, experienced in LabVIEW, Python and R.
+* Optical simulation of reflected /transmitted electromagnetic waves from thin films using RCWA.
+* Device fabrication using electron / photolithography, etching, deposition and wire-bonding.
+* Electrical characterization using spectrum analyzers, oscilloscopes and lock-in amplifiers.
+* Low temperature measurements using cryostats, along with associated vacuum systems.
 
-Publications
+Publications (Select)
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Ali Alsaqqa, et al. "Phase coexistence and dynamical behavior in NdNiO3 ultrathin films", Phys. Rev. B 95, 125132 (2017).
+* Colin Kilcoyne, Ahmed Ali, Ali Alsaqqa, et. al., "Gate-tunable transport characteristics of Bi2S3 nanowire transistors". Solid State Communications 270, p. 135-139 (2017).
+
   
 Talks
 ======
