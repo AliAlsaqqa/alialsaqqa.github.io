@@ -26,9 +26,9 @@ Work experience
   * Implemented quality-focused ways of working to improve system’s quality.
 
 * **Sr. Design Engineer, ASML**, Wilton, CT 	01/2017 - 08/2019
-  * Calculated the impact of process variation on accuracy using Monte Carlo simulations.
+  * Calculated the impact of process variation on accuracy using Monte Carlo.
   * Characterized shot and electronic noise sources and their impact on precision.
-  * Simulated and measured sensor performance using Maxwell’s equations and experiments.
+  * Simulated and measured sensor performance using Maxwell’s equations.
   * Interfaced with marketing team to help reach a better data-based marketing strategy.
   * Modeled and estimated optical sensor drift using time series analysis.
   * Reduced drift calibration time by 89% by optimizing calibration scheme.
