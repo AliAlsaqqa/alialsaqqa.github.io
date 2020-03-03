@@ -8,7 +8,7 @@ redirect_from:
   - /resume
 ---
 
-I am Experimental Physcisist and an aspirin Data Scientist. My main interests are in machine learning for material science; optimal tracking and control (e.g. Kalman Filter); time series analysis (e.g. ARIMA models); and optical signal processing.
+I am an Experimental Physcisist and an aspiring Data Scientist. My main interests are in machine learning for materials science; optimal tracking and control (e.g. Kalman Filter); time series analysis (e.g. ARIMA models); and optical signal processing.
 
 {% include base_path %}
 
@@ -19,16 +19,13 @@ Education
 
 Work experience
 ======
-* ASML, Wilton, CT
-* Lead Engineer 	08/2019 - Present
+* **Lead Engineer, ASML, Wilton, CT** 	08/2019 - 01/2020
   * Lead a team of 7 engineers in optical product development focusing on system performance.
   * Developed requirement specifications for electronic and optical teams based on product definition.
   * Lead the development, testing and documentation of sensor improvements and troubleshooting.
   * Implemented quality-focused ways of working to improve system’s quality and reliability.
 
-* ASML, Wilton, CT
-* Sr. Design Engineer 	01/2017 - 08/2019
-
+* **Sr. Design Engineer, ASML, Wilton, CT** 	01/2017 - 08/2019
   * Calculated the impact of process variation on alignment accuracy using Monte Carlo simulations.
   * Characterized shot and electronic noise sources and their impact on alignment precision.
   * Simulated and measured sensor performance using Maxwell’s equations and lab experiments.
@@ -39,22 +36,16 @@ Work experience
   * Invented a method to reduce laser-induced damage by up to 83% without performance impact.
   * Proposed an alternate electronics architecture that can reduce cost by up to 26%.
  
-* University at Buffalo, SUNY, Buffalo, NY
-* Research Assistant 	01/2013 – 12/2016
-
+* **Research Assistant, University at Buffalo, NY** 	01/2013 – 12/2016
   * Investigated electronic transport in novel materials by fabricating and characterizing Nano-devices.
   * Utilized advanced statistical data analysis and signal processing techniques to discover dynamic transport across metal-insulator transition in NdNiO3 using low-noise measurements.
   * Analyzed experimental data using statistical analysis and signal processing.
 
-* University at Buffalo, SUNY, Buffalo, NY 
-* Teaching Assistant 	08/2014 – 12/2016
-
+* **Teaching Assistant, University at Buffalo, NY**  	08/2014 – 12/2016
   * Taught physics labs and recitations to science and engineering students.
   * Lead 20+ teacher assistants, making sure all are following agreed plans.
 
-* JAWWAL, Gaza, Palestine 
-* Microwave Engineer 	06/2009 – 08/2012
-
+* **Microwave Engineer, JAWWAL, Gaza, Palestine** 	06/2009 – 08/2012
   * Designed microwave networks in the Ku (12-18 GHz) and K (18-27 GHz) bands for 350+ cell towers, including specifications of antennae, radio, modems, channel and polarization.
   * Optimized microwave channel re-use, increasing utilization while avoiding interference.
   
