@@ -14,8 +14,8 @@ I am an Experimental Physcisist and an aspiring Data Scientist. My main interest
 
 Education
 ======
-* PhD in Experimental Solid State Physics, University at Buffalo, NY, USA.
-* BSc in Electrical Engineerin, Islamic University of Gaza, Palestine.
+* **PhD**, Experimental Solid State Physics, University at Buffalo, NY, USA.
+* **BSc**, Electrical Engineering, Islamic University of Gaza, Palestine.
 
 Work experience
 ======
